@@ -60,7 +60,7 @@ const demoJobs: Job[] = [
   { id: 18, title: "Customer Success Executive", company: "NoBroker", location: "Mumbai", workType: "On-site", seniority: "Entry", salary: "₹5–8 LPA", posted: "3 weeks ago", source: "Indeed", url: "https://in.indeed.com/", keywords: ["Customer success", "Communication", "CRM"], matchScore: 41, description: { about: ["Help customers find their next home with confidence."], requirements: ["Empathy and clear communication", "Comfort with CRM tools"], perks: ["Performance bonuses"] } }
 ];
 
-const apiBaseUrl = (process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000").replace(/\/$/, "");
+const apiBaseUrl = (process.env.API_URL ?? "http://127.0.0.1:8000").replace(/\/$/, "");
 const portalDomains: Record<Exclude<Source, "Company sites">, string> = {
   LinkedIn: "linkedin.com/jobs",
   Indeed: "indeed.com",
